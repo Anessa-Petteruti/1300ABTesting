@@ -48,19 +48,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- TODO: Feel free to modify anything inside main.css-->
-    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/mainA.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <title>Find Memphis Taxis online</title>
   </head>
 
   <body>
-    <header>
-      <h1>Memphis Taxis: Version A </h1>
-      <p>This page contains information about taxi and cab companies in Memphis, Tennessee.</p>
-      <p>Not endorsed by any of the companies listed, or the city of Memphis.</p>
-    </header>
-
     <!--
     TODO: Feel free to modify image, change layouts, appearance etc anything.
     Remember if you add any new buttons, you need to update the javascript file, for
@@ -69,35 +63,77 @@
     Easiest thing is to have just the two buttons we already have and try to play around
     with layouts of it.
     -->
+    <div class = "flex-container">
+      <header>
+        <h1>Memphis Taxis: Version A </h1>
+        <p>This page contains information about taxi and cab companies in Memphis, Tennessee.</p>
+        <p>Not endorsed by any of the companies listed, or the city of Memphis.</p>
+      </header>
+      <div class = "vertical-bar"> </div>
+    <div class = "vendor-grid">
+      <div class="vendor-wrapper1 card">
+        <div class = "img-container">
 
-    <div class="vendor-wrapper">
-      <img src="../static/memphis.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">Reserve with YellowCab
-          Taxis</button>
-                <p>Safe, Reliable Taxi Services from Yellow Cab and Checker Cab are available
+        </div>
+        <div class = "card-bottom">
+          <div class = "text">
+            <p class = "heading"> YellowCab Taxis <p>
+            <div class = "underline underline1"> </div>
+            <p>Safe, Reliable Taxi Services from Yellow Cab and Checker Cab are available
               in the Memphis Metro area 24 hours a day.</p>
-    </div>
-    <div class="vendor-wrapper">
-      <img src="../static/memphis2.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">Reserve with RideCharge taxi</button>
-         <p>Our drivers are the most professional drivers in the industry. Our drivers
-              are licensed and required to successfully complete a formal training.</p>
-    </div>
+          </div>
+          <div class = "button-container">
+            <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">Reserve with YellowCab
+                Taxis ➜</button>
+          </div>
+        </div>
+      </div>
+      <div class="vendor-wrapper2 card">
+          <img src="../static/memphis2.png" class="vendor-photo" />
+          <div class = "card-bottom">
+            <div class = "text">
+              <p class = "heading"> RideCharge <p>
+              <div class = "underline underline2"> </div>
+              <p>Our drivers are the most professional drivers in the industry. Our drivers
+                   are licensed and required to successfully complete a formal training.</p>
+            </div>
+            <div class = "button-container">
+              <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">Reserve with RideCharge taxi ➜</button>
+            </div>
+          </div>
+      </div>
 
-    <div class="vendor-wrapper">
-    <img src="../static/uber.png" class="vendor-photo" />
+      <div class="vendor-wrapper3 card">
+        <img src="../static/uber2.png" class="vendor-photo" />
+        <div class = "card-bottom">
+          <div class = "text">
+            <p class = "heading"> Memphis Uber <p>
+            <div class = "underline underline3"> </div>
+            <p> We are so much cheaper than taxis..! We provide transportation as reliable as
+              running water, everywhere for everyone. </p>
+          </div>
+          <div class = "button-container">
+            <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">Reserve with Memphis Uber ➜</button>
+          </div>
+         </div>
+      </div>
 
-    <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">Reserve with Memphis Uber</button>
-     <p> We are so much cheaper than taxis..! </p>
+      <div class="vendor-wrapper4 card">
+        <img src="../static/taxis.jpg" class="vendor-photo" />
+        <div class = "card-bottom">
+          <div class = "text">
+            <p class = "heading"> Premier <p>
+            <div class = "underline underline4"> </div>
+            <p>Our goal is to efficiently transport our passengers in a safe, polite and timely manner at a fair
+              price. Premier at your service.</p>
+          </div>
+          <div class = "button-container">
+          <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">Reserve with Premier taxi ➜</button>
+        </div>
+        </div>
+      </div>
     </div>
-
-    <div class="vendor-wrapper">
-      <img src="../static/premiere.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">Reserve with Premier taxi</button>
-       <p>Our goal is to efficiently
-              transport our passengers in a safe, polite and timely manner at a fair
-              price.</p>
-    </div>
+  </div>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
