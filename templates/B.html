@@ -41,64 +41,113 @@
 
         console.log('version B: cookie:' + cookie)
 
+        function openMenu() {
+            document.getElementById("main").style.marginLeft = "300px";
+            document.getElementById("sideMenu").style.width = "300px";
+            
+          }
+
+          function closeMenu() {
+            document.getElementById("main").style.marginLeft= "0";
+            document.getElementById("sideMenu").style.width = "0";
+            
+          }
+
     </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- TODO: Feel free to modify anything inside main.css-->
-    <!-- TODO: You can even have a new/different css for Version B -->
-    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/B.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Red Hat Display' rel='stylesheet'>
 
     <title>Find Memphis Taxis online</title>
   </head>
 
   <body>
-    <header>
-      <h1>Memphis Taxis Version B</h1>
-        <!-- Some of the ideas could be, making it pretty, making it look real, make it look reliable
-            choosing attractive image etc, showing that your taxis are cheaper than X/Y..
-            Show your creativity!
 
-            At a minimum, we at least require you change the name of buttons.
-             -->
-        <!-- TODO: For those tech savvy users, feel free to beautify the site, using css. -->
-         <!-- TODO: Feel free to update the content -->
-      <p>This page contains information about taxi and cab companies in Memphis, Tennessee.</p>
-      <p>Not endorsed by any of the companies listed, or the city of Memphis.</p>
-    </header>
+    <div id="sideMenu" class="menu">
+      <img class="closeIcon" src='../static/cross-out.png' onclick="closeMenu()"/>
+      <div class="menuIconContainer"><a><img class="menuIcon" src='../static/locator.png'/>Taxi Locator</a></div>
+      <div class="menuIconContainer"><a><img class="menuIcon" src='../static/tour.png'/>Tour Memphis</a></div>
+      <div class="menuIconContainer"><a><img class="menuIcon" src='../static/resources.png'/>Resources</a></div>
+      <div class="menuIconContainer"><a><img class="menuIcon" src='../static/about.png'/>About</a></div>
+      <div class="menuIconContainer"><a><img class="menuIcon" src='../static/help.png'/>Help</a></div>
+    </div>
+
+    <div id="main">
+
+      <div class="rowHeader">
+      <img src="../static/menu-bar.png" onclick="openMenu()" class="menuBar">
+      <div class="titleHeader">
+        <div class="centerTitle">Memphis Taxis</div>
+        <img src="../static/taxi.png" class="car">
+      </div>
+      <div class="rightHeader">
+        <div class="rightMenuBar">
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="all-entries">
 
     <div class="vendor-wrapper">
-      <img src="../static/memphis.png" class="vendor-photo" />
-
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">TODO: Change me</button>
-       <p>Safe, Reliable Taxi Services from Yellow Cab and Checker Cab are available
-              in the Memphis Metro area 24 hours a day.</p>
+      <div class="textButtonWrapper">
+        <div class="title">Home of Blues Services</div>
+        <div class="description">Safe, Reliable Taxi Services from Yellow Cab and Checker Cab are available
+              in the Memphis Metro area 24 hours a day.</div>
+        <button class="vendor-book-button" type="submit" id="mp1">Book</button>
+      </div>
+      <div class="imageDiv">
+        <img src="../static/memphis.png" class="vendor-photo" />
+      </div>
     </div>
 
     <div class="vendor-wrapper">
-      <img src="../static/memphis2.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">TODO: Change me</button>
-       <p>Our drivers are the most professional drivers in the industry. Our drivers
-              are licensed and required to successfully complete a formal training.</p>
-    </div>
-
-     <div class="vendor-wrapper">
-    <img src="../static/uber.png" class="vendor-photo" />
-
-    <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">TODO: Change me</button>
-     <p> We are so much cheaper than taxis..! </p>
+      <div class="textButtonWrapper">
+        <div class="title">Theater Taxi</div>
+        <div class="description">Our drivers are the most professional drivers in the industry. Our drivers
+              are licensed and required to successfully complete a formal training.</div>
+        <button class="vendor-book-button" type="submit" id="mp2">Book</button>
+      </div>
+      <div class="imageDiv">
+        <img src="../static/memphis2.png" class="vendor-photo" />
+      </div>
     </div>
 
     <div class="vendor-wrapper">
-      <img src="../static/premiere.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">TODO: Change me</button>
-       <p>Our goal is to efficiently
+      <div class="textButtonWrapper">
+        <div class="title">Memphis Uber</div>
+        <div class="description">We are so much cheaper than taxis..! Call us for transportation to your next destination!</div>
+        <button class="vendor-book-button" type="submit" id="mp3">Book</button>
+      </div>
+      <div class="imageDiv">
+        <img src="../static/uber.png" class="vendor-photo" />
+      </div>
+    </div>
+
+    <div class="vendor-wrapper">
+      <div class="textButtonWrapper">
+        <div class="title">Premier Taxis</div>
+        <div class="description">Our goal is to efficiently
               transport our passengers in a safe, polite and timely manner at a fair
-              price.</p>
+              price.</div>
+        <button class="vendor-book-button" type="submit" id="mp4">Book</button>
+      </div>
+      <div class="imageDiv">
+        <img src="../static/premiere.png" class="vendor-photo" />
+      </div>
     </div>
+
+  </div>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

@@ -1,0 +1,231 @@
+
+.car{
+  height: 100px;
+  width: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.rowHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rightHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.accessibilityBar {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.accessibilityIconTranslate {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+.accessibilityIconZoom {
+  height: 30px;
+  width: auto;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  background-color: #a7b8c8;
+  background: linear-gradient( 91.9deg, #e0dedc, #ffffff );
+}
+
+.logo {
+  width: 400px;
+  height: auto;
+}
+.centerTitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Julius Sans One';
+  font-weight: 20px;
+  font-size: 80px;
+  color: #000000;
+}
+
+.rightMenuBar {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  height: auto;
+  margin-left: 50px;
+}
+
+
+.menuBar {
+  height: 60px;
+  width: 60px;
+  cursor:pointer;
+}
+
+
+.menu {
+  position: fixed;
+  width: 0;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-decoration: none;
+}
+
+.menu a {
+  padding: 10px 10px 10px 30px;
+  font-family: 'Julius Sans One';
+  font-size: 25px;
+  color: #000000;
+  transition: 0.5s;
+  margin-bottom: 15px;
+  display: block;
+  text-decoration: none;
+
+}
+
+.menu a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.closeIcon {
+  position: absolute;
+  width: 20px;
+  height: auto;
+  top: 0;
+  right: 25px;
+  margin-top: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.menuIconContainer {
+  cursor: pointer;
+}
+
+.menuIcon {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .menu {
+    padding-top: 16px;
+  }
+  .menu a {
+    font-size: 16px;
+  }
+}
+
+.all-entries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.vendor-wrapper {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  padding: 20px;
+  width: 800px;
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.vendor-wrapper:hover {
+  display: flex;
+  flex-direction: row;
+  background: #faf5f1;
+  padding: 20px;
+  width: 800px;
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.textButtonWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Julius Sans One';
+  font-size: 30px;
+}
+
+.imageDiv {
+  height: 200px;
+  width: auto;
+}
+
+.vendor-photo {
+  height: 200px;
+  width: 300px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  border-radius: 4px;
+}
+
+.description {
+  word-wrap: break-word;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  font-family: 'Red Hat Display';
+}
+
+.vendor-book-button {
+  background-color: #fcd768;
+  width: 150px;
+  height: 40px;
+  border-radius: 22px;
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+.vendor-book-button:hover {
+  background-color: #cfcfcf;
+  color: #ffffff;
+  width: 150px;
+  height: 40px;
+  border-radius: 22px;
+  font-family: 'Red Hat Display';
+  font-size: 20px;
+}
