@@ -44,12 +44,14 @@
         function openMenu() {
             document.getElementById("main").style.marginLeft = "300px";
             document.getElementById("sideMenu").style.width = "300px";
+            document.getElementById("hamburger").style.display = "none";
             
           }
 
           function closeMenu() {
             document.getElementById("main").style.marginLeft= "0";
             document.getElementById("sideMenu").style.width = "0";
+            document.getElementById("hamburger").style.display = "block";
             
           }
 
@@ -84,7 +86,7 @@
     <div id="main">
 
       <div class="rowHeader">
-      <img src="../static/menu-bar.png" onclick="openMenu()" class="menuBar">
+      <img src="../static/menu-bar.png" onclick="openMenu()" class="menuBar" id="hamburger">
       <div class="titleHeader">
         <div class="centerTitle">Memphis Taxis</div>
         <img src="../static/taxi.png" class="car">
