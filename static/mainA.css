@@ -163,7 +163,7 @@ body::-webkit-scrollbar-thumb {background-color: #f44336; border-radius: 7px;}
 
 .img-container {
 	height: 200px;
-	background-image: url("../static/yellowcab.jpg");
+	background-image: url("../static/memphis.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
