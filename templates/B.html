@@ -45,14 +45,14 @@
             document.getElementById("main").style.marginLeft = "300px";
             document.getElementById("sideMenu").style.width = "300px";
             document.getElementById("hamburger").style.display = "none";
-            
+            document.getElementById("entries").style.margin = "80px 0px 0px 0px";
           }
 
           function closeMenu() {
             document.getElementById("main").style.marginLeft= "0";
             document.getElementById("sideMenu").style.width = "0";
             document.getElementById("hamburger").style.display = "block";
-            
+            document.getElementById("entries").style.margin = "0px 0px 0px 0px";
           }
 
     </script>
@@ -86,19 +86,20 @@
     <div id="main">
 
       <div class="rowHeader">
-      <img src="../static/menu-bar.png" onclick="openMenu()" class="menuBar" id="hamburger">
+      <img src="../static/hamburger_menu.png" onclick="openMenu()" class="menuBar" id="hamburger" width="200">
+
+      <div class="rightHeader">
+        <div class="rightMenuBar">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="all-entries" id = "entries">
       <div class="titleHeader">
         <div class="centerTitle">Memphis Taxis</div>
         <img src="../static/taxi.png" class="car">
       </div>
-      <div class="rightHeader">
-        <div class="rightMenuBar">
-          
-        </div>
-      </div>
-    </div>
-    
-    <div class="all-entries">
 
     <div class="vendor-wrapper">
       <div class="textButtonWrapper">
@@ -114,7 +115,7 @@
 
     <div class="vendor-wrapper">
       <div class="textButtonWrapper">
-        <div class="title">RideCharge!</div>
+        <div class="title">RideCharge</div>
         <div class="description">Our drivers are the most professional drivers in the industry. Our drivers
               are licensed and required to successfully complete a formal training.</div>
         <button class="vendor-book-button" type="submit" id="mp2">Book</button>

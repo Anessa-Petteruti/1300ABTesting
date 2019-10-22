@@ -1,28 +1,44 @@
+@font-face{
+	font-family: "Circular-Book";
+	src: url("../static/CircularStd-Book.otf");
+}
+
+@font-face{
+	font-family: "Circular-Black";
+	src: url("../static/CircularStd-Black.ttf");
+}
+
 
 .car{
   height: 100px;
   width: auto;
   margin-left: 20px;
   margin-top: 20px;
+  position: relative;
+  bottom: 10px;
 }
 
 .rowHeader {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
+
 .titleHeader {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 40px;
 }
 
 body {
   height: 100vh;
   background-color: #a7b8c8;
-  background: linear-gradient( 91.9deg, #e0dedc, #ffffff );
+  background-color: #f7f7f7 !important;
+  /* background: linear-gradient( 91.9deg, #e0dedc, #ffffff ); */
 }
 
 .logo {
@@ -32,16 +48,21 @@ body {
 .centerTitle {
   display: flex;
   justify-content: center;
-  font-family: 'Julius Sans One';
+  font-family: 'Circular-Black';
   font-weight: 20px;
   font-size: 80px;
   color: #000000;
 }
 
 .menuBar {
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   cursor:pointer;
+}
+
+.menuBar:hover {
+  /* filter: sepia(100%) hue-rotate(190deg) saturate(500%); */
+  filter: brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
 }
 
 
@@ -52,7 +73,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: transparent;
+  background-color: #fcd768;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -61,7 +82,7 @@ body {
 
 .menu a {
   padding: 10px 10px 10px 30px;
-  font-family: 'Julius Sans One';
+  font-family: 'Circular-Book';
   font-size: 25px;
   color: #000000;
   transition: 0.5s;
@@ -72,7 +93,7 @@ body {
 }
 
 .menu a:hover {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
 
@@ -102,7 +123,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   transition: margin-left .5s;
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 @media screen and (max-height: 450px) {
@@ -119,7 +140,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 0px;
+}
+
+#hamburger {
+  position: relative;
+  left: 30px;
+  bottom: -20px;
 }
 
 .vendor-wrapper {
@@ -127,9 +154,10 @@ body {
   flex-direction: row;
   background: #ffffff;
   padding: 20px;
-  width: 800px;
-  margin-bottom: 10px;
+  width: 700px;
+  margin-bottom: 40px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  border-radius: 5px;
 }
 
 .vendor-wrapper:hover {
@@ -137,8 +165,6 @@ body {
   flex-direction: row;
   background: #faf5f1;
   padding: 20px;
-  width: 800px;
-  margin-bottom: 10px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
@@ -148,7 +174,7 @@ body {
 }
 
 .title {
-  font-family: 'Julius Sans One';
+  font-family: 'Circular-Black';
   font-size: 30px;
 }
 
@@ -161,7 +187,8 @@ body {
   height: 200px;
   width: 300px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-  border-radius: 4px;
+  border-radius: 2px;
+  margin-left: 30px;
 }
 
 .description {
@@ -169,26 +196,28 @@ body {
   margin-top: 30px;
   margin-bottom: 40px;
   margin-right: 20px;
-  font-family: 'Red Hat Display';
+  padding-right: 40px;
+  font-family: 'Circular-Book';
 }
 
 .vendor-book-button {
   background-color: #fcd768;
   width: 150px;
   height: 40px;
-  border-radius: 22px;
-  font-family: 'Red Hat Display';
+  border-radius: 5px;
+  font-family: 'Circular-Book';
   font-size: 20px;
   border: none;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
 }
 
 .vendor-book-button:hover {
-  background-color: #cfcfcf;
-  color: #ffffff;
+  background-color: #000000;
+  color: #fcd768;
   width: 150px;
   height: 40px;
-  border-radius: 22px;
-  font-family: 'Red Hat Display';
+  font-family: 'Circular-Book';
   font-size: 20px;
+  /* -webkit-transition-duration: 0.4s !important; /* Safari */
+  /* transition-duration: 0.4s !important; */
 }
